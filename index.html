@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+      <h2>Company Tracker</h2>
+      <ul>
+        <li><a href="#" id="dashboard">Dashboard</a></li>
+        <li><a href="#" id="members">Members</a></li>
+        <li><a href="#" id="attendance">Attendance</a></li>
+        <li><a href="#" id="reports">Reports</a></li>
+        <li><a href="#" id="settings">Settings</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header">
+        <h1>Attendance Tracker</h1>
+      </div>
+
+      <!-- Attendance Section -->
+      <div class="content">
+        <h2>Team Attendance</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Member Name</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="member-list">
+            <!-- JavaScript will populate this -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <h3>Selected Member Information</h3>
+      <div id="map-container"></div>
+      <div id="timeline">
+        <h4>Visited Locations</h4>
+        <ul id="location-timeline"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_rAD_usql2O4uSUhjqox3FdB95dD8NTU&libraries=geometry"></script>
+  <script src="script.js"></script>
+</body>
+</html>
